@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CodeRefactoring.DataAccess.Concrete.InMemory
 {
-    public class InMemoryInstructorDal : EntityRepositoryBase<Instructor>,IInstructorDal
+    public class InstructorDal : EntityRepositoryBase<Instructor>,IInstructorDal
     {
     
     }

@@ -10,7 +10,7 @@ namespace CodeRefactoring
         static void Main(string[] args)
         {
             //Testing student
-            StudentManager studentManager = new StudentManager(new InMemoryStudentDal());
+            StudentManager studentManager = new StudentManager(new StudentDal());
             string[] instructorsArray = new string[] { "Engin", "Alper" };
             string[] lessonsArray = new string[] { "Yazılım Mühendisliği", "Mikroişlemci" };
 
@@ -27,8 +27,8 @@ namespace CodeRefactoring
             Console.WriteLine("----------------------------------------------------");
             //Testing instructor
 
-            InstructorManager ınstructorManager = new InstructorManager(new InMemoryInstructorDal());
-            string[] coursesArray = new string[] { "GoLang", "Java" };
+            InstructorManager ınstructorManager = new InstructorManager(new InstructorDal());
+            string[] coursesArray = new string[] { "C#", "Java" };
             string[] studentsArray = new string[] { "Eyüp", "Fatih" };
 
             Instructor ınstructor  = new Instructor("Can ", "Değer", "c@gmail.com", "12223",coursesArray,studentsArray);
